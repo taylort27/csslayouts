@@ -8,6 +8,10 @@
 }
 .content {
 }
+.left-col{
+    width: 300px;
+    background-color: aquamarine;
+}
 .footer {
     height: 100px;
     background-color: aliceblue;
