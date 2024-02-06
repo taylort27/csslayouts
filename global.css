@@ -4,9 +4,7 @@
 }
 .header {
     height: 100px; 
-    background-color: aliceblue;
-}
-.content {
+    background-color: rgba(var(--tmdbDarkBlue),1);
 }
 .left-col{
     width: 300px;
