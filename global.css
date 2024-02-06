@@ -4,15 +4,48 @@
 }
 .header {
     height: 100px; 
-    background-color: rgba(var(--tmdbDarkBlue),1);
+    background: #032541;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: #032541;
+    padding: 70px 0px 0px 20px; /* Adjust padding as needed */
+    position: relative; /* Required for positioning the logo */
 }
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    position: left;
+    top: 50%;
+    transform: translateY(-40%);
+    right: 20px; /* Adjust distance from the right as needed */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+  nav ul li:first-child {
+    margin-left: 0; /* Remove margin for the first menu item */
+}
+  
+  nav ul li a {
+    color: white; /* Set the font color to white */
+    text-decoration: none; /* Remove underlines from links */
+  }
 .left-col{
     width: 300px;
     background-color: aquamarine;
 }
 .footer {
-    height: 100px;
-    background-color: aliceblue;
+    height: 200px;
+    background: #032541; 
 }
 
 /* flex */ 
