@@ -1,67 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>css layouts</title>
-    <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="global.css" />
-  </head>
-  <body>
-    <div class="container flex flex-col">
-      <header class="header">
-        <img src="https://fakeimg.pl/600x600" alt="Logo" class="logo">
+<head>
+  <title>css layouts</title>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="global.css" />
+  <style>
+    /* Font import */
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+    /* CSS styles */
+    .container {
+      width: 100%;
+      height: 100vh;
+    }
+    .header {
+      height: 100px; 
+      background: #032541;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100px;
+      background: #032541;
+      padding: 70px 0px 0px 20px; /* Adjust padding as needed */
+      position: relative; /* Required for positioning the logo */
+      font-family: 'Source Sans Pro', sans-serif; /* Apply font */
+      font-weight: 600; /* Apply font weight */
+    }
+    .logo {
+      width: 100px; /* Adjust size as needed */
+      height: auto;
+      position: left;
+      top: 50%;
+      transform: translateY(-40%);
+      right: 20px; /* Adjust distance from the right as needed */
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block; /* Display menu items horizontally */
+      margin-left: 20px; /* Adjust spacing between menu items */
+    }
+    nav ul li:first-child {
+      margin-left: 0; /* Remove margin for the first menu item */
+    }
+    nav ul li a {
+      color: white; /* Set the font color to white */
+      text-decoration: none; /* Remove underlines from links */
+    }
+    .left-col {
+      width: 300px;
+      background-color: aquamarine;
+    }
+    .footer {
+      height: 350px;
+      background: #032541;
+      font-family: 'Source Sans Pro', sans-serif; /* Apply font */
+      font-weight: 600; /* Apply font weight */
+    }
+    /* Flexbox styles */
+    .flex {
+      display: flex; 
+    }
+    .flex-col {
+      flex-direction: column;
+    }
+    .flex-row {
+      flex-direction: row;
+    }
+    .justify-center {
+      justify-content: center;
+    }
+    .item-center {
+      align-items: center;
+    }
+    .flex-center {
+      justify-content: center;
+      align-items: center;
+    }
+    .grow {
+      flex-grow: 1;
+    }
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start; /* Align items to the top of each column */
+    }
+
+    .footer h2 {
+      color: white;
+      width: 100%; /* Ensure each heading takes full width */
+      margin-top: 20px; /* Add some space between each heading */
+    }
+
+    .footer nav {
+      flex: 1; /* Each nav takes equal space */
+      margin-right: 20px; /* Add some space between each nav */
+    }
+
+    .footer nav ul {
+      padding: 0;
+    }
+
+    .footer nav ul li {
+      margin-bottom: 10px; /* Add some space between each list item */
+    }
+
+    .footer nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container flex flex-col">
+    <header class="header">
+      <img src="https://fakeimg.pl/600x600" alt="Logo" class="logo">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">More</a></li>
         </ul>
       </nav>
     </header>
-      <div class="content grow flex flex-row flex-wrap">
-        <div class="left-col">left</div>
-        <div class="grow">right</div>
-      </div>
-      <footer class="footer">
-        <h2>THE BASICS</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">About TMBD</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Support Forums</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">System Status</a></li>
-                </ul>
-            </nav>
-
-            <h2>GET INVOLVED</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Contribution Bible</a></li>
-                    <li><a href="#">Add New Movie</a></li>
-                    <li><a href="#">Add New TV Show</a></li>
-                </ul>
-            </nav>
-
-            <h2>GET INVOLVED</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Guidelines</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Leaderboard</a></li>
-                </ul>
-            </nav>
-
-            <h2>GET INVOLVED</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">API Terms of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">DMCA Policy</a></li>
-                </ul>
-            </nav>
-        </footer>
+    <div class="content grow flex flex-row flex-wrap">
+      <div class="left-col">left</div>
+      <div class="grow">right</div>
     </div>
-  </body>
+    <footer class="footer">
+      <div class="footer-column">
+        <h2 class="footer-heading">THE BASICS</h2>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">About TMBD</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support Forums</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">System Status</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 class="footer-heading">GET INVOLVED</h2>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Contribution Bible</a></li>
+            <li><a href="#">Add New Movie</a></li>
+            <li><a href="#">Add New TV Show</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 class="footer-heading">GUIDELINES</h2>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Guidelines</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Leaderboard</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h2 class="footer-heading">LEGAL</h2>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">API Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">DMCA Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
