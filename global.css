@@ -12,6 +12,8 @@
     background: #032541;
     padding: 70px 0px 0px 20px; /* Adjust padding as needed */
     position: relative; /* Required for positioning the logo */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
 }
 .logo {
     width: 100px; /* Adjust size as needed */
@@ -24,25 +26,27 @@
 nav ul {
     list-style: none;
     padding: 0;
-  }
+}
 
-  nav ul li {
+nav ul li {
     display: inline-block; /* Display menu items horizontally */
     margin-left: 20px; /* Adjust spacing between menu items */
 }
 
-  nav ul li:first-child {
+nav ul li:first-child {
     margin-left: 0; /* Remove margin for the first menu item */
 }
-  
-  nav ul li a {
+
+nav ul li a {
     color: white; /* Set the font color to white */
     text-decoration: none; /* Remove underlines from links */
-  }
-.left-col{
+}
+
+.left-col {
     width: 300px;
     background-color: aquamarine;
 }
+
 .footer {
     height: 350px;
     background: #032541; 
@@ -50,29 +54,36 @@ nav ul {
 
 /* flex */ 
 
-.flex{
+.flex {
     display: flex; 
 }
-.flex-col{
+
+.flex-col {
     flex-direction: column;
 }
-.flex-row{
+
+.flex-row {
     flex-direction: row;
 }
-.justify-center{
+
+.justify-center {
     justify-content: center;
 }
-.item-center{
+
+.item-center {
     align-items: center;
 }
-.flex-center{
+
+.flex-center {
     justify-content: center;
     align-items: center;
 }
-.grow{
+
+.grow {
     flex-grow: 1;
 }
-.flex-wrap{
+
+.flex-wrap {
     flex-wrap: wrap;
 }
 
@@ -80,7 +91,8 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start; /* Align items to the top of each column */
+    align-items: flex-start;
+     /* Align items to the top of each column */
 }
 
 .footer h2 {
@@ -94,8 +106,9 @@ nav ul {
     margin-right: 20px; /* Add some space between each nav */
 }
 
-.footer nav ul {
+.footer-column nav ul {
     padding: 0;
+    text-align: left; /* Align menu items to the left */
 }
 
 .footer nav ul li {
@@ -105,4 +118,10 @@ nav ul {
 .footer nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+.header,
+.footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
 }
