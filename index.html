@@ -4,117 +4,23 @@
   <title>css layouts</title>
   <link rel="stylesheet" type="text/css" href="reset.css" />
   <link rel="stylesheet" type="text/css" href="global.css" />
-  <style>
-    .container {
-      width: 100%;
-      height: 100vh;
-    }
-    .header {
-      height: 100px; 
-      background: #032541;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100px;
-      background: #032541;
-      padding: 70px 0px 0px 20px;
-      position: relative;
-    }
-    .logo {
-      width: 100px;
-      height: auto;
-      position: left;
-      top: 50%;
-      transform: translateY(-40%);
-      right: 20px;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    nav ul li {
-      display: inline-block;
-      margin-left: 20px;
-    }
-    nav ul li:first-child {
-      margin-left: 0;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-    .left-col {
-      width: 480px;
-      background-color: rgb(165, 127, 255);
-    }
-    .leftt-col {
-      width:480px;
-      background-color: aquamarine;
-    }
-    .lefttt-col {
-      width: 480px;
-      background-color: rgb(127, 214, 255);
-    }
-    .leftttt-col {
-      width: 480px;
-      background-color: rgb(255, 127, 217);
-    }
-    .footer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: flex-start;
-      height: 200px;
-      background: #032541; 
-    }
-    .footer h2 {
-      width: 100%;
-      margin-top: 20px;
-    }
-    .footer nav {
-      margin-right: 20px;
-    }
-    .footer nav ul {
-      padding: 0;
-    }
-    .footer nav ul li {
-      margin-bottom: 10px;
-      display: block; /* Change display to block */
-    }
-    .footer nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-
-    /* New CSS for column layout */
-    .footer-nav {
-      flex: 1;
-      margin-right: 20px;
-    }
-    .footer-heading {
-      color: white;
-    }
-    .footer-column {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  </style>
 </head>
-<body>
-  <div class="container flex flex-col">
+<body class="normal smaller no_animation smaller subtule">
+  <div class="container">
     <header class="header">
-      <img src="https://fakeimg.pl/600x600" alt="Logo" class="logo">
+      <a class="logo" href="/">
+        <img src="https://placekitten.com/640/360" alt="The Movie Database (TMDB)" width="`150" height="80">
+      </a>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">More</a></li>
         </ul>
       </nav>
     </header>
-    <div class="content grow flex flex-row flex-wrap">
+    <div class="content">
       <div class="left-col">Column 1</div>
       <div class="leftt-col">Column 2</div>
       <div class="lefttt-col">Column 3</div>
