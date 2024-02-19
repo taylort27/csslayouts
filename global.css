@@ -1,127 +1,110 @@
 .container {
     width: 100%;
     height: 100vh;
-}
-.header {
+  }
+  
+  .header {
     height: 100px; 
     background: #032541;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    background: #032541;
-    padding: 70px 0px 0px 20px; /* Adjust padding as needed */
-    position: relative; /* Required for positioning the logo */
+    align-items: left;
+    justify-content: 0;
+    padding: 20px 20px 20px 20px; /* Adjust padding as needed */
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-}
-.logo {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    position: left;
-    top: 50%;
-    transform: translateY(-40%);
-    right: 20px; /* Adjust distance from the right as needed */
-}
-nav ul {
+  }
+  
+  .logo {
+    width: 200px; /* Adjust size as needed */
+    height: 100px;
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline-block; /* Display menu items horizontally */
-    margin-left: 20px; /* Adjust spacing between menu items */
-}
-
-nav ul li:first-child {
-    margin-left: 0; /* Remove margin for the first menu item */
-}
-
-nav ul li a {
-    color: white; /* Set the font color to white */
-    text-decoration: none; /* Remove underlines from links */
-}
-
-.left-col {
-    width: 300px;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 0px; /* Adjust spacing between menu items */
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif; /* Set font family */
+    font-weight: 600; /* Set font weight */
+  }
+  
+  .left-col {
+    width: 480px;
     background-color: aquamarine;
-}
-
-.footer {
-    height: 200px;
-    background: #032541; 
-}
-
-/* flex */ 
-
-.flex {
-    display: flex; 
-}
-
-.flex-col {
-    flex-direction: column;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.item-center {
-    align-items: center;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
-}
-
-.grow {
-    flex-grow: 1;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.footer {
+  }
+  
+  .leftt-col {
+    width: 480px;
+    background-color: rgb(165, 127, 255);
+  }
+  
+  .lefttt-col {
+    width: 480px;
+    background-color: rgb(127, 214, 255);
+  }
+  
+  .leftttt-col {
+    width: 480px;
+    background-color: rgb(255, 127, 217);
+  }
+  
+  .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-     /* Align items to the top of each column */
-}
-
-.footer h2 {
-    color: white;
-    width: 100%; /* Ensure each heading takes full width */
-    margin-top: 20px; /* Add some space between each heading */
-}
-
-.footer nav {
-    flex: 1; /* Each nav takes equal space */
-    margin-right: 20px; /* Add some space between each nav */
-}
-
-.footer-column nav ul {
-    padding: 0;
-    text-align: left; /* Align menu items to the left */
-}
-
-.footer nav ul li {
-    margin-bottom: 10px; /* Add some space between each list item */
-}
-
-.footer nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.header,
-.footer {
+    height: 200px;
+    background: #032541; 
+  }
+  
+  .footer h2 {
+    width: 100%;
+    margin-top: 20px;
+    color: white; /* Set font color */
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-}
+  }
+  
+  .footer nav {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-column nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align menu items to the left */
+  }
+  
+  .footer nav ul li {
+    margin-bottom: 10px;
+    display: block; /* Change display to block */
+  }
+  
+  .footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif; /* Set font family */
+    font-weight: 600; /* Set font weight */
+  }
+  
+  /* New CSS for column layout */
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
