@@ -108,3 +108,15 @@
     align-items: flex-start;
   }
   
+    /* Add CSS for flexbox layout */
+    .page_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center items horizontally */
+    }
+    .card {
+        flex: 0 0 auto; /* Reset flex property to default */
+        width: 20%; /* Adjust width for desired number of cards per row */
+        margin: 10px;
+    }
+
