@@ -7,16 +7,17 @@
     height: 100px; 
     background: #032541;
     display: flex;
-    align-items: left;
-    justify-content: 0;
-    padding: 20px 20px 20px 20px; /* Adjust padding as needed */
+    align-items: center; /* Vertically center items */
+    justify-content: left; /* Distribute items along the main axis */
+    padding: 20px; /* Adjust padding as needed */
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    font-weight: 100;
   }
   
   .logo {
     width: 200px; /* Adjust size as needed */
     height: 100px;
+    padding-right: 20px; /* Add padding to the right of the logo */
   }
   
   nav ul {
@@ -109,14 +110,13 @@
   }
   
     /* Add CSS for flexbox layout */
+    /* Add CSS for flexbox layout */
     .page_wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Center items horizontally */
-    }
-    .card {
-        flex: 0 0 auto; /* Reset flex property to default */
-        width: 20%; /* Adjust width for desired number of cards per row */
-        margin: 10px;
-    }
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Center items horizontally */
+  }
+  .card {
+      flex: 0 0 calc(20% - 20px); /* Adjust width for desired number of cards per row */
+      margin: 10px;
+  }
