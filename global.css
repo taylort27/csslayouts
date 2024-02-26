@@ -1,122 +1,127 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .container {
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .header {
-    height: 100px; 
-    background: #032541;
-    display: flex;
-    align-items: center; /* Vertically center items */
-    justify-content: left; /* Distribute items along the main axis */
-    padding: 20px; /* Adjust padding as needed */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 100;
-  }
-  
-  .logo {
-    width: 200px; /* Adjust size as needed */
-    height: 100px;
-    padding-right: 20px; /* Add padding to the right of the logo */
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-left: 0px; /* Adjust spacing between menu items */
-  }
-  
-  nav ul li:first-child {
-    margin-left: 0;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif; /* Set font family */
-    font-weight: 600; /* Set font weight */
-  }
-  
-  .left-col {
-    width: 480px;
-    background-color: aquamarine;
-  }
-  
-  .leftt-col {
-    width: 480px;
-    background-color: rgb(165, 127, 255);
-  }
-  
-  .lefttt-col {
-    width: 480px;
-    background-color: rgb(127, 214, 255);
-  }
-  
-  .leftttt-col {
-    width: 480px;
-    background-color: rgb(255, 127, 217);
-  }
-  
-  .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    height: 200px;
-    background: #032541; 
-  }
-  
-  .footer h2 {
-    width: 100%;
-    margin-top: 20px;
-    color: white; /* Set font color */
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-  }
-  
-  .footer nav {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .footer-column nav ul {
-    padding: 0;
-    margin: 0;
-    text-align: left; /* Align menu items to the left */
-  }
-  
-  .footer nav ul li {
-    margin-bottom: 10px;
-    display: block; /* Change display to block */
-  }
-  
-  .footer nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif; /* Set font family */
-    font-weight: 600; /* Set font weight */
-  }
-  
-  /* New CSS for column layout */
-  .footer-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-    /* Add CSS for flexbox layout */
-    /* Add CSS for flexbox layout */
-    .page_wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; /* Center items horizontally */
-  }
-  .card {
-      flex: 0 0 calc(20% - 20px); /* Adjust width for desired number of cards per row */
-      margin: 10px;
-  }
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  height: 100px;
+  background: #032541;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  padding-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Adjust to display flex */
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.user_score_chart .percent {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Changed from 'left' to 'flex-start' */
+}
+
+.left-col,
+.leftt-col,
+.lefttt-col,
+.leftttt-col {
+  width: 480px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Changed from 'left' to 'flex-start' */
+  height: 200px;
+  background: #032541;
+}
+
+.footer h2 {
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.footer nav {
+  margin-right: 20px;
+  display: flex; /* Adjust to display flex */
+}
+
+.footer-column nav ul {
+  text-align: left;
+  display: flex; /* Adjust to display flex */
+  flex-direction: column; /* Align items vertically */
+}
+
+.footer nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.page_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 calc(20% - 20px);
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  border: 1px solid rgba(var(--lightGrey),1);
+  background-color: #fff;
+}
+
+.card.style_1 .content {
+  width: 100%;
+  padding: 26px 10px 12px;
+  position: relative;
+  white-space: normal;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
