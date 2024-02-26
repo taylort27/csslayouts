@@ -39,7 +39,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 nav ul li:first-child {
@@ -118,7 +118,7 @@ nav ul li a {
 
 .card.style_1 .content {
   width: 100%;
-  padding: 26px 10px 12px;
+  padding: 20px 10px 12px;
   position: relative;
   white-space: normal;
   display: flex;
